@@ -60,7 +60,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="100dp"
         android:text="@string/player1_button"
-        android:onClick="foundLetter"
+        android:onClick="sendMessage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
