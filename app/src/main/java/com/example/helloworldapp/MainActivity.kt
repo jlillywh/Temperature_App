@@ -25,4 +25,15 @@ class MainActivity : AppCompatActivity() {
         }
         startActivity(intent)
     }
+
+    /**
+     * Called when user clicks on the Player 1 button
+     */
+    fun foundLetter(view: View){
+        val message = "Player 1 found the letter!"
+        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+            putExtra(EXTRA_MESSAGE, message)
+        }
+        startActivity(intent)
+    }
 }

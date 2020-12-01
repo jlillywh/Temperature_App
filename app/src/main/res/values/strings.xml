@@ -2,4 +2,6 @@
     <string name="app_name">Hello World App</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="player1_button">Player 1</string>
+    <string name="player2_button">Player 2</string>
 </resources>
