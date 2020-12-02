@@ -13,8 +13,10 @@ const val EXTRA_MESSAGE = "com.example.helloworldapp.MESSAGE"
 
 class MainActivity : AppCompatActivity() {
     var letter: Char = 'A'
+    var letter_counter: Int = 0
     var score1: Int = 0
     var score2: Int = 0
+    var letter_points = listOf(1,5,5,2,1,5,5,2,1,10,5,5,5,1,1,5,10,2,2,1,5,5,5,10,5,15)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,16 +32,20 @@ class MainActivity : AppCompatActivity() {
 
         player1_submit.setOnClickListener{
             letter++
-            score1++
+
+            score1 += letter_points[letter_counter]
             player1_score.setText("SCORE:  $score1")
             letter_display.setText(letter.toString())
+            letter_counter++
         }
 
         player2_submit.setOnClickListener{
             letter++
-            score2++
+
+            score2 += letter_points[letter_counter]
             player2_score.setText("SCORE:  $score2")
             letter_display.setText(letter.toString())
+            letter_counter++
         }
     }
 
